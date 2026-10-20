@@ -1,336 +1,175 @@
 # SkillSetu (कौशलसेतू)
-### AI Career Guidance & NSQF-Aligned Skill-Gap Platform
+> **AI Career Guidance & Skill-Gap Platform for Vocational Students in India**
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-19.0-61dafb.svg)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-8.x-646cff.svg)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v4.0-38bdf8.svg)](https://tailwindcss.com/)
+[![React](https://img.shields.io/badge/React-19-blue.svg)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38bdf8.svg)](https://tailwindcss.com/)
 [![Tests](https://img.shields.io/badge/Tests-19%20Passed-2E8B57.svg)](./src/tests/runAllTests.ts)
-[![NSQF](https://img.shields.io/badge/NSQF-Level%203%20to%208-F28C28.svg)](https://www.msde.gov.in/)
-[![DigiLocker](https://img.shields.io/badge/DigiLocker-Verified%20Integration-1F4E79.svg)](https://www.digilocker.gov.in/)
+[![NSQF](https://img.shields.io/badge/NSQF-Levels%203--8-F28C28.svg)](https://www.msde.gov.in/)
 
 ---
 
-## 📌 Executive Summary
+## 🎯 What is SkillSetu?
 
-**SkillSetu (कौशलसेतू)** is an AI-powered, deterministic career guidance and skill-gap identification platform designed specifically for students in India's vocational ecosystem (**ITIs, Polytechnic Diplomas, and Tier-2/3 Technical Colleges**).
+**SkillSetu** helps **ITI, Polytechnic, and Diploma students** in India find the right job, discover their missing skills, and get certified step-by-step.
 
-Unlike black-box AI chatbots that hallucinate general advice, SkillSetu uses a **mathematically transparent, NSQF-aligned scoring engine**, a real-time **What-If Employability Simulator**, **Stepping-Stone vocational ladders**, and official **DigiLocker / Skill India Digital** credential verification to turn technical training into verified jobs and government apprenticeships (**NAPS**).
-
----
-
-## 🛑 Problem Statement
-
-India trains millions of vocational students annually across **15,000+ Industrial Training Institutes (ITIs)** and **3,500+ Polytechnic colleges**. However, over **60% of graduates remain underemployed or face placement mismatch**. 
-
-### Root Bottlenecks in the Existing Ecosystem:
-1. **The "Black-Box" Career Guidance Trap**: Generic career portals offer vague advice ("*Learn Coding*", "*Be a Leader*") without breaking down specific, practical industrial competencies (e.g. *PLC Ladder Logic*, *Industrial Motor Starters*, *CNC G-Code*, *GD&T*).
-2. **NSQF Misalignment**: Job roles in industry map strictly to the **National Skills Qualifications Framework (NSQF Levels 3 to 8)**, yet students do not know which NSQF rung they currently qualify for.
-3. **The "Dream Role" Chasm**: A student aiming for a Level 6 role (*Industrial Automation Specialist*) is often discouraged by a 35% readiness score, with no system to recommend intermediate bridge roles (*Junior PLC Maintenance Technician* at Level 4) for immediate wage-earning potential.
-4. **Unverified Resumes vs. Employer Mistrust**: Employers distrust self-declared resume bullets, while students lack a tamper-proof way to present certified practical coursework.
-5. **Language & Regional Barriers**: Most technical guidance platforms exist exclusively in English, isolating vernacular-medium learners in semi-urban and rural industrial clusters.
+Instead of guessing or asking generic AI, SkillSetu uses **clear math formulas**, real **NSQF job levels**, and direct **DigiLocker verification**.
 
 ---
 
-## 💡 The SkillSetu Solution
+## ❌ The Problem
 
-SkillSetu bridges this divide by providing a structured, explainable, and multi-stakeholder platform:
-
-* **Transparent Multi-Variable Scoring Engine**: Every career fit percentage is calculated mathematically using verified weights:
-  $$\text{Fit Score} = w_{\text{skill}} \cdot \text{Readiness} + w_{\text{interest}} \cdot \text{InterestFit} + w_{\text{demand}} \cdot \text{MarketDemand}$$
-* **Penalty Skills Transparency**: Pinpoints the exact skills costing the student the most points in employability.
-* **Signature "What-If" Simulator**: Interactive competency sliders show candidates how upgrading a skill (e.g. *Wiring & Earthing* from Level 1 to Level 3) boosts their fit percentage in real time.
-* **Stepping-Stone Progression Logic**: Automatically recommends realistic intermediate roles when target readiness is below 50%.
-* **DigiLocker & Skill India Digital (SID) Gateway**: Cryptographically imports NCVT trade certificates, MSBTE polytechnic marksheets, and PMKVY certificates to verify skills on-chain/in-profile with official stamps.
-* **8-Week Dated Learning Pathways**: Curates zero-cost, government-certified courses from **SWAYAM**, **NPTEL**, and **Skill India** budgeted to the student's available weekly study hours.
-* **Trilingual Voice & Text Support**: Full native support for **English**, **हिन्दी (Hindi)**, and **मराठी (Marathi)** with hands-free speech input.
-* **Multi-Role Ecosystem**: Dedicated interfaces for **Students**, **College Training & Placement Officers (TPOs)**, **Industry Mentors & Recruiters**, and **Placement Cell Admins**.
+* **High Unemployment**: Over 60% of technical diploma and ITI graduates struggle to find relevant jobs.
+* **Vague Career Advice**: Generic websites say *"learn communication"* or *"study coding"* instead of specific workshop skills like *PLC Wiring*, *Safety PPE*, or *CNC G-Code*.
+* **No Stepping-Stones**: A student aiming for a high-level job (e.g. ₹50k/mo) gets discouraged with a low score, without knowing they can take an intermediate job (e.g. ₹20k/mo) first.
+* **Unverified Resumes**: Companies don't trust plain resume text; students have no easy way to prove practical skills.
+* **Language Barrier**: Most tools are English-only. Vocational students need Hindi and Marathi.
 
 ---
 
-## 🏗️ System Architecture Diagram
+## ✅ The Solution
+
+* **Accurate Match Score**: Calculates exact job readiness (%) using a clear, weighted formula.
+* **Penalty Skills**: Shows exactly which 2–3 missing skills are pulling your score down.
+* **"What-If" Simulator**: Move sliders on skills to see your job readiness jump in real-time.
+* **Stepping-Stone Ladder**: Recommends bridge jobs when you are under 50% ready for your dream job.
+* **DigiLocker & Skill India Digital**: Import official ITI trade certificates & marksheets with 1 click.
+* **Free 8-Week Roadmap**: Week-by-week plan using free government courses (SWAYAM, NPTEL, Skill India).
+* **3 Languages**: Fully available in **English**, **हिन्दी (Hindi)**, and **मराठी (Marathi)** with voice input.
+* **4 Portals**: Separate dashboards for **Student**, **College TPO**, **Industry Recruiter**, and **Admin**.
+
+---
+
+## 🏛️ System Architecture
 
 ```
-+-----------------------------------------------------------------------------------------+
-|                                  PRESENTATION LAYER                                     |
-|                                                                                         |
-|   +-------------------+  +--------------------+  +------------------+  +-------------+  |
-|   |   Student Home    |  |  Vocational Ladder |  | Skill Gap Matrix |  | 8-Wk Pathway|  |
-|   |  & Readiness Ring |  |  & What-If Sliders |  | & Penalty Skills |  |   Roadmap   |  |
-|   +-------------------+  +--------------------+  +------------------+  +-------------+  |
-|                                                                                         |
-|   +-------------------+  +--------------------+  +------------------+  +-------------+  |
-|   | DigiLocker Modal  |  |  TPO Batch Portal  |  |   Mentor Review  |  | Voice Modal |  |
-|   | & SID Credentials |  | & Deficit Heatmaps |  | & Endorsements   |  | (Web Speech)|  |
-|   +-------------------+  +--------------------+  +------------------+  +-------------+  |
-+--------------------------------------------+--------------------------------------------+
-                                             |
-                                             v
-+-----------------------------------------------------------------------------------------+
-|                              APPLICATION STATE & CONTEXT                                |
-|                                                                                         |
-|                        AppContext (React 19 Hooks & Multi-Role RBAC)                     |
-|            [Student Profile] [Target Role] [Weights] [Sync Time] [Audit History]        |
-+--------------------------------------------+--------------------------------------------+
-                                             |
-                      +----------------------+----------------------+
-                      |                                             |
-                      v                                             v
-+-------------------------------------------+  +------------------------------------------+
-|      ALGORITHMIC & SERVICE ENGINES        |  |        LOCAL PERSISTENCE LAYER           |
-|                                           |  |                                          |
-|  * recommendationEngine.ts                |  |  * storageService.ts                     |
-|    - calculateRoleGaps()                  |  |    - Student Profiles (Isolated per User)|
-|    - calculateInterestFit()               |  |    - Assessment History Logs             |
-|    - simulateWhatIf()                     |  |    - DigiLocker Verified Certificates    |
-|    - getSteppingStoneAdvice()             |  |    - Mentor Feedback & Endorsements      |
-|                                           |  |    - Institutional Batch Roster          |
-|  * pathwayBuilder.ts                      |  |    - Calibrated Formula Weights          |
-|    - Budget-aware 8-week curriculum       |  |    - Full JSON State Backup & Restore    |
-|    - Level gating & milestone unlock      |  |                                          |
-|                                           |  |                                          |
-|  * voiceService.ts & geminiService.ts     |  +------------------------------------------+
-|    - Trilingual speech synthesis          |
-|    - Offline heuristic fallback engine    |
-+---------------------+---------------------+
-                      |
-                      v
-+-----------------------------------------------------------------------------------------+
-|                         GOVERNMENT & ECOSYSTEM INTEGRATIONS                             |
-|                                                                                         |
-|  +------------------------+  +-------------------------+  +--------------------------+  |
-|  |       DigiLocker       |  |   Skill India Digital   |  |  National Apprenticeship |  |
-|  | NCVT Trade Certificates|  |    PMKVY 4.0 Badges     |  |   Promotion Scheme (NAPS)|  |
-|  +------------------------+  +-------------------------+  +--------------------------+  |
-|                                                                                         |
-|  +------------------------+  +-------------------------+  +--------------------------+  |
-|  |     SWAYAM & NPTEL     |  |   State Tech Boards     |  |   NSQF Standards (MSDE)  |  |
-|  |  Free Certified Courses|  | MSBTE Diploma Marksheets|  |  NCO / QP Classification |  |
-|  +------------------------+  +-------------------------+  +--------------------------+  |
-+-----------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------+
+|                               1. USER INTERFACE                               |
+|   * Student Home & Readiness Gauge       * Vocational Ladder & What-If Sliders|
+|   * DigiLocker Import Gateway            * College TPO Cohort Analytics       |
+|   * 8-Week Learning Roadmap              * Recruiter & Mentor Endorsements    |
++---------------------------------------+---------------------------------------+
+                                        |
+                                        v
++-------------------------------------------------------------------------------+
+|                            2. STATE & PERSISTENCE                             |
+|   * AppContext: Multi-role authentication & active profile state              |
+|   * StorageService: Local storage sync (isolated per user, zero demo leaks)   |
++---------------------------------------+---------------------------------------+
+                                        |
+                   +--------------------+--------------------+
+                   |                                         |
+                   v                                         v
++--------------------------------------+  +-------------------------------------+
+|        3. CORE ALGORITHM ENGINE      |  |      4. GOVERNMENT & DATA APIS      |
+|  * Weighted Skill Gap Formula        |  |  * DigiLocker: NCVT Trade Certs     |
+|  * Semantic Interest Matching        |  |  * Skill India Digital (SID): PMKVY |
+|  * Stepping-Stone Role Finder        |  |  * NAPS: Official Apprenticeships   |
+|  * 8-Week Pathway Generator          |  |  * SWAYAM / NPTEL: Certified Courses|
++--------------------------------------+  +-------------------------------------+
 ```
 
 ---
 
-## 🔄 User Flow Diagram
+## 🔁 User Flow
 
 ```
-[ New Student Sign-In ]
-         │ (Mobile OTP or Email — Zero Demo Data Leaks)
-         ▼
-[ Step 1: Onboarding Wizard ] ──► Enter Name, College, Trade (Electrical/Mech/Data), & Interests
-         │
-         ▼
-[ Step 2: Diagnostic Assessment or DigiLocker Import ]
-         ├─────────────────────────────────────────┬──────────────────────────────────────────┐
-         │                                         │                                          │
-         ▼                                         ▼                                          ▼
-   [ Take 3-Min Quiz ]                     [ Connect DigiLocker ]                     [ Self-Declaration ]
-   Tested on actual workshop               Fetch verified NCVT/MSBTE/PMKVY            Capped at Level 3
-   safety & trade questions                marksheets with QR & digital seal          marked unverified
-         │                                         │                                          │
-         └─────────────────────────────────────────┼──────────────────────────────────────────┘
-                                                   │
-                                                   ▼
-                                [ Step 3: Verified Competency Vector ]
-                                (Skills calibrated from Level 0 to Level 5)
-                                                   │
-                                                   ▼
-                                 [ Step 4: Role Gap & Readiness Engine ]
-                                 - Mathematical Readiness %
-                                 - Have (Green), Partial (Orange), Missing (Red)
-                                 - Penalty Skills identified
-                                                   │
-                                                   ▼
-                               [ Step 5: "What-If" Simulation & Stepping Stone ]
-                               - If readiness < 50% ──► Stepping-Stone Role suggested
-                               - Move skill sliders ──► Real-time fit jump simulated
-                                                   │
-                                                   ▼
-                                [ Step 6: 8-Week Personalized Learning Pathway ]
-                                - Budgeted to student's weekly study hours (e.g. 6 hrs/wk)
-                                - Free certified modules (NPTEL, SWAYAM, Skill India)
-                                                   │
-                                                   ▼
-                               [ Step 7: Industry Placement & NAPS Apprenticeship ]
-                               - Direct matching with verified stipends (₹15,000–₹18,000/mo)
-                               - Plant recruiters view verified skill scores only
+1. Sign In (Phone OTP / Email)
+   │ (Fresh account with 0 demo data)
+   ▼
+2. Quick Onboarding
+   │ Enter Name, College, Trade (Electrical / Mech / CS), & Hours/Week
+   ▼
+3. Measure Skills
+   ├── Take a 3-minute diagnostic quiz
+   ├── Connect DigiLocker to auto-verify trade certificates
+   └── Self-rate existing practical experience
+   ▼
+4. View Skill-Gap Report
+   │ See Have (Green), Partial (Orange), and Missing (Red) skills
+   ▼
+5. Try What-If Simulator
+   │ Move sliders to test: "If I learn PLC, how much does my job fit jump?"
+   ▼
+6. Follow 8-Week Roadmap
+   │ Complete free certified modules budgeted to your weekly schedule
+   ▼
+7. Apply for Jobs & NAPS Apprenticeships
+   │ Matched directly to paid industry openings (₹15,000 - ₹18,000/mo)
 ```
 
 ---
 
-## 🧮 Mathematical Model (Clear & Deterministic)
+## 🧮 How the Score is Calculated
 
-SkillSetu does not use arbitrary AI scores. All guidance is grounded in transparent formulas:
+$$\text{Fit Score} = (0.60 \times \text{Skills}) + (0.25 \times \text{Interests}) + (0.15 \times \text{Market Demand})$$
 
-### 1. Skill Gap & Readiness Formula
-For each skill required by a role with required level $R_i$ and importance weight $I_i$ ($0.1 \le I_i \le 1.0$), given the student's current level $C_i$:
-$$\text{Readiness (\%)} = \frac{\sum_{i=1}^{N} \min(C_i, R_i) \cdot I_i}{\sum_{i=1}^{N} R_i \cdot I_i} \times 100$$
-
-$$\text{Weighted Gap}(i) = \max(0, R_i - C_i) \cdot I_i$$
-
-### 2. Multi-Variable Career Fit Score
-Combines competency, stated interest tokens, and real market demand:
-$$\text{Fit Score} = w_{\text{skill}} \cdot \text{Readiness} + w_{\text{interest}} \cdot \text{InterestFit} + w_{\text{demand}} \cdot \text{MarketDemand}$$
-*Default calibrated weights:*
-* $w_{\text{skill}} = 0.60$ (60% weight on actual verified competency)
-* $w_{\text{interest}} = 0.25$ (25% weight on semantic vocational interests)
-* $w_{\text{demand}} = 0.15$ (15% weight on active hiring trend score)
-
-### 3. Stepping-Stone Role Algorithm
-When readiness for an aspirational target role is below the threshold (default **50%**):
-* The engine searches for intermediate roles in the **same stream** with an **$\text{NSQF Level} < \text{Target NSQF}$**.
-* Recommends the nearest bridge role so the student can achieve early employment and climb the vocational ladder smoothly.
+* **60% Skills**: What you can actually do (Level 0 to 5).
+* **25% Interests**: Your preferred technical areas.
+* **15% Market Demand**: Real hiring trends in Indian industry.
 
 ---
 
-## 👥 Multi-Stakeholder Ecosystem
+## 🛠️ Tech Stack
 
-| Role | Purpose | Key Features |
-|---|---|---|
-| **Student** | Self-directed career acceleration | Skill radar, DigiLocker import, What-If simulation, 8-week learning pathway, voice guidance. |
-| **College TPO** | Institutional placement officer portal | Cohort readiness roster, trade batch registration, critical deficit heatmap, CSV report exports. |
-| **Industry Mentor** | Plant supervisor & recruiter | Verified talent directory, interview invitations, skill endorsements, star ratings & feedback notes. |
-| **Admin** | Placement cell calibration | Real-time slider calibration for $w_{\text{skill}}$, $w_{\text{interest}}$, and $w_{\text{demand}}$ weights. |
-
----
-
-## 💻 Tech Stack
-
-* **Frontend Framework**: [React 19](https://react.dev/) + [Vite 8](https://vitejs.dev/)
-* **Language**: [TypeScript 5.x](https://www.typescriptlang.org/) (Strict typing across models and services)
-* **Styling & Design System**: [Tailwind CSS v4](https://tailwindcss.com/) (Accessible high-contrast palette with Indian ecosystem colors)
-* **Icons**: [Lucide React](https://lucide.dev/)
-* **Animations & Gamification**: [Motion](https://motion.dev/) & [canvas-confetti](https://www.npmjs.com/package/canvas-confetti)
-* **Persistence Layer**: Custom `StorageService` with automatic JSON hydration, key isolation per user, and state backup
-* **Speech & Voice**: Web Speech API (`webkitSpeechRecognition` & `speechSynthesis`) for Hindi, Marathi, and English
-* **Testing Runner**: Node.js 22 Test Suite with `tsx` runner
+| Component | Technology |
+|---|---|
+| **Frontend** | React 19 + TypeScript 5 |
+| **Styling** | Tailwind CSS v4 |
+| **Build Tool** | Vite 8 |
+| **Icons & Motion** | Lucide React + Motion |
+| **Voice** | Web Speech API (English, Hindi, Marathi) |
+| **Data Storage** | Browser Persistence with JSON export/import |
+| **Testing** | Node.js 22 Test Runner (`tsx`) |
 
 ---
 
-## 🧪 Automated Test Suite (19 / 19 Passed)
+## 🧪 Automated Tests (19 / 19 Passed)
 
-SkillSetu includes an end-to-end unit and integration test suite verifying all algorithms:
-
+Run the built-in test suite:
 ```bash
 npm test
 ```
 
-### Verified Test Suites:
-1. **Suite 1: Data Taxonomy & NSQF Alignment**
-   * Role NSQF range validity (Levels 3 to 8)
-   * Taxonomy reference consistency for all required skills
-   * Sequential ascending ladder rungs
-   * Question bank schema & difficulty bounds
-   * Demo persona data integrity
-2. **Suite 2: Deterministic Recommendation Engine**
-   * `calculateRoleGaps()` mathematical bounds (0% to 100%)
-   * Semantic interest token normalization
-   * Weighted fit formula ranking and penalty skills derivation
-   * `simulateWhatIf()` delta accuracy
-   * `getSteppingStoneAdvice()` threshold triggers
-3. **Suite 3: Learning Pathway Builder**
-   * 8-week structured roadmap generation & hour budgeting
-   * Status progression (Active vs Locked)
-4. **Suite 4: Storage Service & Persistence Layer**
-   * Student profile isolation across sessions
-   * Chronological assessment record logging
-   * DigiLocker certificate saving & retrieval
-   * Mentor feedback and institutional batch persistence
-   * Complete JSON state export & import
-5. **Suite 5: DigiLocker Verification & Skill Ingestion**
-   * Verified competency level elevation and readiness increase
-6. **Suite 6: User Isolation & Fresh Learner State**
-   * Zero demo data leakage for newly registered accounts
-   * Strict separation of custom user storage from demo personas
+* **Suite 1**: NSQF levels and skill taxonomy consistency.
+* **Suite 2**: Mathematical gap formulas, What-If simulation, and stepping-stone rules.
+* **Suite 3**: 8-week curriculum builder and hour budgeting.
+* **Suite 4**: Storage persistence across page reloads.
+* **Suite 5**: DigiLocker certificate parsing and skill verification.
+* **Suite 6**: Zero demo data leakage for new user logins.
 
 ---
 
-## 🚀 Getting Started
+## ⚡ Quick Start
 
-### Prerequisites
-* **Node.js**: v20+ or v22+
-* **npm**: v10+
+```bash
+# 1. Clone repository
+git clone https://github.com/ishayadav1291-wq/dump2-.git
+cd dump2-
 
-### Installation & Run
+# 2. Install dependencies
+npm install
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/ishayadav1291-wq/dump2-.git
-   cd dump2-
-   ```
+# 3. Run all tests
+npm test
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Run automated test suite:**
-   ```bash
-   npm test
-   ```
-
-4. **Start the local development server:**
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-5. **Build for production:**
-   ```bash
-   npm run build
-   ```
-
----
-
-## 📁 Repository Structure
-
-```
-├── .env.example                     # Environment configuration template
-├── .gitignore                       # Clean gitignore excluding node_modules/dist/locks
-├── index.html                       # HTML5 entry point with NSQF meta tags
-├── metadata.json                    # AI Studio platform capabilities & metadata
-├── package.json                     # NPM dependencies and scripts
-├── tsconfig.json                    # Strict TypeScript compiler options
-├── vite.config.ts                   # Vite bundler with Tailwind CSS v4 plugin
-├── public/                          # Static assets and blueprint blueprints
-└── src/
-    ├── App.tsx                      # Root application router and modal mounts
-    ├── main.tsx                     # React 19 application entry point
-    ├── index.css                    # Tailwind CSS v4 design tokens and theme
-    ├── types/                       # TypeScript interfaces and domain schemas
-    ├── context/                     # AppContext: Reactive state & persistence sync
-    ├── data/                        # NSQF career roles, question bank, ladders, courses
-    ├── locales/                     # Trilingual translations (EN, HI, MR)
-    ├── services/
-    │   ├── recommendationEngine.ts  # Deterministic weighted gap & What-If formula
-    │   ├── pathwayBuilder.ts        # 8-week dated course roadmap generator
-    │   ├── storageService.ts        # User-isolated local storage persistence
-    │   ├── voiceService.ts          # Multilingual speech input/output
-    │   └── geminiService.ts         # Career mentor advice engine
-    ├── components/
-    │   ├── auth/                    # LoginPage with unique phone/email & demo buttons
-    │   ├── layout/                  # TopNavbar, BottomNav, VoiceAssistantModal
-    │   ├── student/                 # StudentHome, CareerLadder, DigiLockerModal, etc.
-    │   ├── institution/             # InstitutionDashboard (TPO cohort analytics)
-    │   ├── mentor/                  # MentorPortal (Recruiter review & skill endorsements)
-    │   ├── admin/                   # AdminCalibrationView (Scoring weight calibration)
-    │   └── ui/                      # CircularProgress, RadarChart
-    └── tests/
-        └── runAllTests.ts           # 19 automated tests across 6 suites
+# 4. Start development server
+npm run dev
 ```
 
----
-
-## 📜 Standards & Compliance
-* **NSQF (National Skills Qualifications Framework)**: Ministry of Skill Development and Entrepreneurship (MSDE).
-* **NCO (National Classification of Occupations)**: Aligned codes for industrial trades.
-* **NAPS**: National Apprenticeship Promotion Scheme direct wage stipend links.
-* **DPDP 2023 Compliant**: Client-side storage and user-authorized credential verification.
+Open **`http://localhost:3000`** in your browser.
 
 ---
 
-## 👨‍💻 Author & Maintainer
-Built with pride for vocational and technical learners across India.
-* **Repository**: [ishayadav1291-wq/dump2-](https://github.com/ishayadav1291-wq/dump2-)
-* **Developer Email**: ishayadav9850@gmail.com
+## 👥 User Roles
+
+1. **Student**: Test skills, view career ladders, and follow roadmaps.
+2. **College TPO**: Track batch readiness, view skill deficit heatmaps, and export CSV reports.
+3. **Industry Mentor / Recruiter**: Review verified candidates and endorse practical skills.
+4. **Admin**: Tune formula weights ($w_{\text{skill}}$, $w_{\text{interest}}$, $w_{\text{demand}}$).
+
+---
+
+## 📄 License & Standards
+* **Standards**: Aligned with **NSQF**, **NCO Codes**, and **MSDE** guidelines.
+* **Privacy**: Client-side data storage adhering to **DPDP Act 2023** principles.

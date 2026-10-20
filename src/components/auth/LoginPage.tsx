@@ -249,17 +249,8 @@ export const LoginPage: React.FC = () => {
             </form>
           )}
 
-          {/* New User Option & Demo Personas */}
+          {/* Demo Personas */}
           <div className="pt-4 border-t border-slate-100 space-y-3">
-            <button
-              type="button"
-              onClick={() => login('new', 'student')}
-              className="w-full p-2.5 rounded-xl border-2 border-dashed border-emerald-300 bg-emerald-50/60 hover:bg-emerald-100/60 text-emerald-800 font-bold text-xs flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
-            >
-              <Sparkles className="w-4 h-4 text-[#2E8B57]" />
-              <span>✨ Explore as Blank New Learner (0 Pre-Filled Skills)</span>
-            </button>
-
             <div>
               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block text-center mb-2">
                 Or Test with Sample Personas (Pre-Populated Data):
