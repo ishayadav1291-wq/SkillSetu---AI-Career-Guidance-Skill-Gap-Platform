@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build artifacts
+dist/
+dist-ssr/
+*.local
+
+# Environment variables
+.env
+.env*.local
+
+# Editor & OS files
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.idea/
+.vscode/
+
+# Non-npm lockfiles
+bun.lock
+bun.lockb
+yarn.lock
+pnpm-lock.yaml
+
+# Temporary logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
